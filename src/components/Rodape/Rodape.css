@@ -4,7 +4,8 @@
     padding: 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center; 
+    max-width: 100%;    
 }
 
 .footer ul li {
@@ -18,3 +19,20 @@
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .footer ul {
+        margin-top: 20px;
+        display: flex;
+    }
+    .footer ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .footer p {
+        margin-right: 0;
+    }
+}
